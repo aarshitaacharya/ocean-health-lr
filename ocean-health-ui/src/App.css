@@ -5,6 +5,9 @@
   text-align: center;
 }
 
+html, body{
+  background-image: url("/background.jpg");
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +42,129 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+.form-container {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 3px solid black;
+  border-radius: 4px;
+  box-shadow: 4px 4px 0px black;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.result-card {
+  max-width: 360px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  box-shadow: 4px 4px 0 black;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.status-text {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.status-healthy {
+  color: green;
+}
+
+.status-moderate {
+  color: orange;
+}
+
+.status-unhealthy {
+  color: red;
+}
+
+.status-text {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+.example-cloud {
+  margin: 1rem auto;
+  max-width: 360px;
+  height: 500px;
+  box-shadow: 3px 3px 0 black;
+  text-align: center;
+}
+
+.examples-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+
+.app-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.page-title {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+@media (min-width: 768px) {
+  .form-section {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .form-container,
+  .example-cloud {
+    width: 48%;
+  }
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.logo-image {
+  width: 80px;
+  height: 80px;
+  image-rendering: pixelated;
+}
+
+.title-text {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  line-height: 1.3;
+  color: white;
 }
